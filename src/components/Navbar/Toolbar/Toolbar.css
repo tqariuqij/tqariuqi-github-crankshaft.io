@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Opet Tr Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Opet Tr Regular'), url('./OpetTRA.woff') format('woff');
+    }
+
+h1{
+    font-family: 'Opet Tr Regular';
+ }
+
+ .color{
+
+    background-color: #550000;
+ }
+spacer{
+    flex: 1;
+}
+@media (max-width: 768px) {
+    .toolbarList{
+        display: none;
+    }
+}

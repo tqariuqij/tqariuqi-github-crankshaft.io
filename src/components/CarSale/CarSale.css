@@ -1,0 +1,6 @@
+.car{
+    background-image: url(cars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #e63525;
+}
