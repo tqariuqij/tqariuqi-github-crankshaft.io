@@ -7,6 +7,8 @@ import { CarSale } from './components/CarSale/CarSale';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
 import { CarHire } from './pages/CarHire/CarHire';
+import { SevenSitters } from './pages/SevenSitters/SevenSitters';
+import { PickUps } from './pages/PickUps/PickUps';
 
 class App extends Component{
   state={
@@ -56,6 +58,24 @@ class App extends Component{
         <div>
           <Navbar />
           <CarHire showPage={this.state.showPage}
+          changePage={this.changePage}/>
+          <Footer />
+        </div>
+      );
+    } else if (this.state.showPage === 'SevenSitters') {
+      return(
+        <div>
+          <Navbar />
+          <SevenSitters showPage={this.state.showPage}
+          changePage={this.changePage}/>
+          <Footer />
+        </div>
+      );
+    } else if (this.state.showPage === 'PickUps') {
+      return(
+        <div>
+          <Navbar />
+          <PickUps showPage={this.state.showPage}
           changePage={this.changePage}/>
           <Footer />
         </div>
