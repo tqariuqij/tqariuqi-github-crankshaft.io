@@ -9,6 +9,7 @@ import { Footer } from './components/Footer/Footer';
 import { CarHire } from './pages/CarHire/CarHire';
 import { SevenSitters } from './pages/SevenSitters/SevenSitters';
 import { PickUps } from './pages/PickUps/PickUps';
+import { Saloons } from './pages/Saloons/Saloons'
 
 class App extends Component{
   state={
@@ -80,7 +81,18 @@ class App extends Component{
           <Footer />
         </div>
       );
+    }else if (this.state.showPage === 'Saloons') {
+      return(
+        <div>
+          <Navbar />
+          <Saloons showPage={this.state.showPage}
+          changePage={this.changePage}/>
+          <Footer />
+        </div>
+      );
     }
+
+
   }
 }
 export default App;
